@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ credentials: true, origin: ['http://localhost:8081', 'http://localhost:5000'] }));
+app.use(cors({ credentials: true, origin: ['https://rendertest-9wlt.onrender.com', 'http://localhost:8081', 'http://localhost:5000'] }));
 
 app.use('/api', mainRoutes);
 

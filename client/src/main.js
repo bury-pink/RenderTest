@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = 'https://rendertest-9wlt.onrender.com/api';
 axios.defaults.withCredentials = true;
 
 const app = createApp(App);
