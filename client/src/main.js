@@ -3,8 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import axios from 'axios';
+import dotenv from 'dotenv';
 
-axios.defaults.baseURL = 'https://rendertest-9wlt.onrender.com/api';
+dotenv.config();
+
+axios.defaults.baseURL = process.env.MY_NODE_URL;
 axios.defaults.withCredentials = true;
 
 const app = createApp(App);
